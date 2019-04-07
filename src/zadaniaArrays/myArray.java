@@ -67,6 +67,12 @@ public class myArray {
                 this.arr = newArr;
 
                 }
+
+                //public int pop ()
+                //{
+                  //  int result = this.arr.length - 1;
+                    //this.
+                //}
             }
 
 
