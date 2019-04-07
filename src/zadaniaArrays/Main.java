@@ -22,6 +22,9 @@ public class Main {
 
         System.out.println(ma.pick(4));
         System.out.println(ma2.pick(3));
+
+        ma.push(17);
+        ma.print();
     }
 
     }

@@ -13,11 +13,6 @@ public class myArray {
 
     }
 
-        // metoda dostpena z zewnatrz drukujaca cala tablice
-        //konstruktor przyjmujacy tablice
-        //konstruktor domyslny - nie przyjmuje zadnych parametorw wypelnia arr [0]
-
-
     myArray() {
 
         for (int elem : this.arr) {
@@ -58,6 +53,19 @@ public class myArray {
                     {
                         return this.arr[i];
                     }
+                }
+
+
+                public void push (int toPush){
+                int [] newArr = new int [2*this.lenght()];
+                for (int i =0; i <newArr.length; i++){
+                        if (i< this.lenght()) newArr[i] = this.arr[i];
+                }
+
+
+                newArr[this.lenght()] = toPush;
+                this.arr = newArr;
+
                 }
             }
 
